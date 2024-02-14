@@ -1,0 +1,12 @@
+prefix=/opt/libtorch
+exec_prefix=${prefix}
+libdir=${exec_prefix}/lib
+includedir=${prefix}/include
+torch_api_includedir=${includedir}/torch/csrc/api/include
+
+Name: torch
+Description: PyTorch C++ Library with Cuda 12.1 support
+Version: 2.1.2+cu121
+
+Libs: -L${libdir} -libtorch
+Cflags: -I${includedir} -I${torch_api_includedir}

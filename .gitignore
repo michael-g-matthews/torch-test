@@ -4,3 +4,9 @@
 *.ptx
 *.cubin
 *.fatbin
+
+# Build artifacts
+build/
+
+# IDE configuration
+.vscode/
